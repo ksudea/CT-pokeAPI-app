@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pokepocket Search Page</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="styles.css">
+        <script src="js/bootstrap.js"></script>
+    </head>
+    <body>
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light border-bottom border-body" data-bs-theme="light">
+            <div class="container-fluid py-1">
+                <a class="navbar-brand navbar-logo" href="home.html">
+                    <img src="logo.png" alt="" width="72" height="72">
+                  </a>          
+                <a class="navbar-brand" href="home.html">Pokepocket</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link" href="home.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="search.html">Search for Pokemon</a>
+                      </li>
+                    </ul>
+                  </div>
+              </div>
+          </nav>
+        <div class="content-container pt-5 pb-5 text-center">
+            <img src="logo.png" alt="" width="100" height="100" class="logo mt-3" >
+            <h2 class="display-4 mb-5 mt-2">Search for Pokémon</h2>
+            <div class="my-2">
+                <label for="searchInput" class="form-label fw-light">Enter Pokemon name or ID:</label>
+                <input type="text" id="searchInput" class="form-control" required style="width: 50%; margin-left: 25%; margin-right: 25%;">
+                <!--dynamically update page based on user input -- fetches pokemon data when user clicks search-->
+                <button class="btn btn-primary-2 my-5" onclick="fetchPokemon()" style="width: 30%;">Search</button>    
+            </div>
+    <!--display pokemon card with a few details and link to details page-->
+            <div id="pokemonSummary"></div>
+        </div>
+    
+        <script src="search.js"></script>    
+    </body>
+    
+</html>

@@ -1,0 +1,118 @@
+.home-container {
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-image: url('background.jpg');
+    color:black;
+    min-height: 100vh;
+    background-color: #7BBBAA;
+    opacity: 0.8;
+}
+
+.container-home-content {
+    opacity: 1;
+}
+.content-container {
+    background-size: 100% auto;
+    background-color: #7bbbaa81;
+    min-height: 60vh;
+}
+.header {
+   min-height: 40vh;
+}
+@media (min-width: 768px) { 
+    .header{
+        min-height: 60vh;
+    }
+ }
+ @media (min-width: 1200px) { 
+    .header{
+        min-height: 100vh;
+    }
+ }
+
+ .btn-primary-2 {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #8581A6;
+    --bs-btn-border-color: #676480;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #7869C6;
+    --bs-btn-hover-border-color: #373d42;
+    --bs-btn-focus-shadow-rgb: 66, 70, 73;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #373b3e;
+    --bs-btn-active-shadow: 0 10px 20px rgba(99, 139, 166, 0.792);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: #212529;
+    --bs-btn-disabled-border-color: #212529;
+  }
+
+@keyframes pulse {
+    0%,
+    100% {
+      animation-timing-function: ease-in;
+    }
+    50% {
+      transform: scale(1.2);
+    }
+  }
+  @keyframes mover {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px);
+        transform: scale(1.2); }
+  }
+  
+      .btn:hover {
+          animation: pulse 2s infinite;
+      }
+      .navbar-logo:hover, .logo:hover {
+          animation: mover 2s infinite;
+      }
+  
+  
+.navbar-light {
+    background-color: #77baa86d;
+    box-shadow: 5px -10px 20px #8c9b9b94 inset;
+}
+
+.dashboard-nav-link:active {
+    color: rgb(76, 76, 76) !important;
+}
+
+.pokemon-card {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    font-family: sans-serif;
+}
+
+.poke-image {
+    min-width: 100px;
+    max-width: 130px;
+    height:auto;
+
+}
+
+.pokemon-card > .card-header {
+    font-weight:700;
+    letter-spacing: .1rem;
+}
+
+.detail-card {
+    font-family: sans-serif;
+    letter-spacing: 0.05rem;
+}
+.card-title {
+    font-weight:700;
+    letter-spacing: .3rem;
+    font-size: 3rem;
+}
+.accordion-button {
+    font-weight:500;
+    letter-spacing: .1rem;
+    font-size: 1.2rem;
+}
+.accordion-body {
+    font-weight: 200;
+    letter-spacing: .05rem;
+}
